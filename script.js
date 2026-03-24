@@ -4,6 +4,12 @@ function updateTime() {
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
+    const date = now.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+    if (urlParameter('date') != false) {
+    document.getElementById('date').textContent = date;
+    } else {
+        document.getElementById('date').style.display = 'none';
+    }
     if (urlParameter('seconds') == true) {
         span.textContent = `${hours}:${minutes}:${seconds}`;
     } else {

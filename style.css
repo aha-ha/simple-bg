@@ -14,6 +14,14 @@
     font-size: 128px;
     color: #ffffff;
     text-align: center;
-    margin: 25% auto;
+    margin: 10% auto;
+    font-family: monospace;
+}
+
+.calendar {
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
     font-family: monospace;
 }
