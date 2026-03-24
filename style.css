@@ -9,3 +9,11 @@
     background-position: center;
     z-index: -1;
 }
+
+.clock {
+    font-size: 128px;
+    color: #ffffff;
+    text-align: center;
+    margin: 25% auto;
+    font-family: monospace;
+}
